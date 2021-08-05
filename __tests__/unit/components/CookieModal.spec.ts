@@ -46,20 +46,6 @@ describe('CookieModal.vue', () => {
     const modal = wrapper.find('.base-modal');
 
     expect(modal.exists()).toBe(false);
-  });
-
-  it('should call "closeModal()" when BaseModal emits the "close" event', async () => {
-    const wrapper = mount(CookieModal);
-
-    const baseModal = wrapper.getComponent({ name: 'BaseModal' });
-
-    baseModal.vm.$emit('close');
-
-    await wrapper.vm.$nextTick();
-
-    const modal = wrapper.find('.base-modal');
-
-    expect(modal.exists()).toBe(false);
     expect(localStorage.getItem('ws_got_about_cookies')).toBe('true');
   });
 });
