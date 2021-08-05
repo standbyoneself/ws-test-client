@@ -2,6 +2,8 @@
 
 Client for Test Task from wemake.services
 
+Requirements are here: https://github.com/wemake-services/meta/issues/7
+
 Allows to display GitHub user repositories with GitHub Oauth
 
 Powered by Vue 3, TypeScript, VueX, Vue Router. Express is used to serve the build output directory
