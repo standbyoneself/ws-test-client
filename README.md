@@ -1,5 +1,16 @@
 # ws-test-client
 
+Client for Test Task from wemake.services
+
+Allows to display GitHub user repositories with GitHub Oauth
+
+Powered by Vue 3, TypeScript, VueX, Vue Router. Express is used to serve the build output directory
+
+Demo Link: https://wemake-services-test-client.herokuapp.com
+
+**N.B.:**
+**Some browsers (e.g. Safari) prevent cross-site tracking that is important for this app due to using httpOnly cookies. You must disable this in security settings**
+
 ## Project setup
 
 ```
@@ -18,7 +29,7 @@ yarn dev
 yarn build
 ```
 
-### Run unit tests
+### Run unit tests (Jest + Vue Test Utils)
 
 ```
 yarn test:unit
@@ -30,6 +41,8 @@ yarn test:unit
 yarn lint
 ```
 
-### Customize configuration
+## License
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+MIT
+
+Made with ❤️ by [Sergey Vishnevsky](https://github.com/standbyoneself)
